@@ -3,6 +3,8 @@ package com.lld.im.service.user.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.lld.im.common.ResponseVO;
 import com.lld.im.common.enums.DelFlagEnum;
+import com.lld.im.common.enums.UserErrorCode;
+import com.lld.im.common.exception.ApplicationException;
 import com.lld.im.service.user.dao.ImUserDataEntity;
 import com.lld.im.service.user.dao.mapper.ImUserDataMapper;
 import com.lld.im.service.user.model.req.DeleteUserReq;
@@ -12,6 +14,7 @@ import com.lld.im.service.user.model.req.ModifyUserInfoReq;
 import com.lld.im.service.user.model.resp.GetUserInfoResp;
 import com.lld.im.service.user.model.resp.ImportUserResp;
 import com.lld.im.service.user.service.ImUserService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -78,16 +81,67 @@ public class ImUserServiceImpl implements ImUserService {
 
     @Override
     public ResponseVO<ImUserDataEntity> getSingleUserInfo(String userId, Integer appId) {
-        return null;
+        QueryWrapper queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq("app_id",appId);
+        queryWrapper.eq("user_id",userId);
+        queryWrapper.eq("del_flag",DelFlagEnum.NORMAL.getCode());
+        ImUserDataEntity data = imUserDataMapper.selectOne(queryWrapper);
+        if(data == null){
+            return ResponseVO.errorResponse(UserErrorCode.USER_IS_NOT_EXIST);
+        }
+
+        return ResponseVO.successResponse(data);
+
     }
 
     @Override
     public ResponseVO deleteUser(DeleteUserReq req) {
-        return null;
+        ImUserDataEntity userDataEntity = new ImUserDataEntity();
+        userDataEntity.setDelFlag(DelFlagEnum.DELETE.getCode());
+        List<String> errorId = new ArrayList<>();
+        List<String> successId = new ArrayList<>();
+        for(String userId : req.getUserId()){
+            QueryWrapper wrapper = new QueryWrapper();
+            wrapper.eq("app_id",req.getAppId());
+            wrapper.eq("user_id",userId);
+            wrapper.eq("del_flag",DelFlagEnum.NORMAL.getCode());
+            int update = 0;
+            try{
+                update = imUserDataMapper.update(userDataEntity, wrapper);
+                if(update > 0){
+                    successId.add(userId);
+                }else{
+                    errorId.add(userId);
+                }
+            }catch(Exception e){
+                errorId.add(userId);
+            }
+        }
+
+        ImportUserResp resp = new ImportUserResp();
+        resp.setSuccessId(successId);
+        resp.setErrorId(errorId);
+        return ResponseVO.successResponse(resp);
     }
 
     @Override
     public ResponseVO modifyUserInfo(ModifyUserInfoReq req) {
-        return null;
+        QueryWrapper query = new QueryWrapper<>();
+        query.eq("app_id",req.getAppId());
+        query.eq("user_id",req.getUserId());
+        query.eq("del_flag",DelFlagEnum.NORMAL.getCode());
+        ImUserDataEntity user = imUserDataMapper.selectOne(query);
+        if(user == null){
+            throw new ApplicationException(UserErrorCode.USER_IS_NOT_EXIST);
+        }
+        ImUserDataEntity update = new ImUserDataEntity();
+        BeanUtils.copyProperties(req,update);
+        update.setAppId(null);
+        update.setUserId(null);
+        int update1 = imUserDataMapper.update(update, query);
+        if(update1 == 1){
+            return ResponseVO.successResponse();
+        }
+        throw new ApplicationException(UserErrorCode.MODIFY_USER_ERROR);
     }
 }
