@@ -1,0 +1,100 @@
+2023-02-04 00:33:29 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m51s959ms).
+2023-02-04 01:39:48 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h6m18s930ms).
+2023-02-04 02:59:41 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h19m52s927ms).
+2023-02-04 04:04:25 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h4m44s7ms).
+2023-02-04 05:10:07 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m41s738ms).
+2023-02-04 06:20:38 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m30s950ms).
+2023-02-04 07:28:06 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m28s50ms).
+2023-02-04 08:16:29 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m22s564ms).
+2023-02-04 08:30:08 -Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:30:08 -HikariPool-1 - Shutdown initiated...
+2023-02-04 08:30:08 -HikariPool-1 - Shutdown completed.
+2023-02-04 08:30:17 -Starting ServiceApplication on nathan.local with PID 99177 (/Users/zzm/IdeaProjects/im-system/service/target/classes started by zzm in /Users/zzm/IdeaProjects/im-system)
+2023-02-04 08:30:17 -The following profiles are active: dev
+2023-02-04 08:30:18 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-04 08:30:18 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-04 08:30:18 -Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2023-02-04 08:30:19 -Tomcat initialized with port(s): 8000 (http)
+2023-02-04 08:30:19 -Initializing ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:30:19 -Starting service [Tomcat]
+2023-02-04 08:30:19 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-02-04 08:30:19 -Initializing Spring embedded WebApplicationContext
+2023-02-04 08:30:19 -Root WebApplicationContext: initialization completed in 1654 ms
+2023-02-04 08:30:20 -Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:30:21 -Starting ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:30:21 -Tomcat started on port(s): 8000 (http) with context path ''
+2023-02-04 08:30:21 -Started ServiceApplication in 4.508 seconds (JVM running for 6.528)
+2023-02-04 08:30:25 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-04 08:30:25 -Initializing Servlet 'dispatcherServlet'
+2023-02-04 08:30:25 -Completed initialization in 18 ms
+2023-02-04 08:30:51 -HikariPool-1 - Starting...
+2023-02-04 08:30:51 -HikariPool-1 - Start completed.
+2023-02-04 08:31:03 -Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:31:03 -HikariPool-1 - Shutdown initiated...
+2023-02-04 08:31:03 -HikariPool-1 - Shutdown completed.
+2023-02-04 08:31:48 -Starting ServiceApplication on nathan.local with PID 99213 (/Users/zzm/IdeaProjects/im-system/service/target/classes started by zzm in /Users/zzm/IdeaProjects/im-system)
+2023-02-04 08:31:48 -The following profiles are active: dev
+2023-02-04 08:31:49 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-04 08:31:49 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-04 08:31:49 -Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2023-02-04 08:31:49 -Tomcat initialized with port(s): 8000 (http)
+2023-02-04 08:31:49 -Initializing ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:31:49 -Starting service [Tomcat]
+2023-02-04 08:31:49 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-02-04 08:31:50 -Initializing Spring embedded WebApplicationContext
+2023-02-04 08:31:50 -Root WebApplicationContext: initialization completed in 1257 ms
+2023-02-04 08:31:50 -Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:31:51 -Starting ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:31:51 -Tomcat started on port(s): 8000 (http) with context path ''
+2023-02-04 08:31:51 -Started ServiceApplication in 3.335 seconds (JVM running for 3.921)
+2023-02-04 08:31:57 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-04 08:31:57 -Initializing Servlet 'dispatcherServlet'
+2023-02-04 08:31:57 -Completed initialization in 13 ms
+2023-02-04 08:31:57 -HikariPool-1 - Starting...
+2023-02-04 08:31:57 -HikariPool-1 - Start completed.
+2023-02-04 08:38:14 -Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:38:14 -HikariPool-1 - Shutdown initiated...
+2023-02-04 08:38:14 -HikariPool-1 - Shutdown completed.
+2023-02-04 08:38:18 -Starting ServiceApplication on nathan.local with PID 99277 (/Users/zzm/IdeaProjects/im-system/service/target/classes started by zzm in /Users/zzm/IdeaProjects/im-system)
+2023-02-04 08:38:18 -The following profiles are active: dev
+2023-02-04 08:38:19 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-04 08:38:19 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-04 08:38:19 -Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2023-02-04 08:38:19 -Tomcat initialized with port(s): 8000 (http)
+2023-02-04 08:38:19 -Initializing ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:38:19 -Starting service [Tomcat]
+2023-02-04 08:38:19 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-02-04 08:38:19 -Initializing Spring embedded WebApplicationContext
+2023-02-04 08:38:19 -Root WebApplicationContext: initialization completed in 1258 ms
+2023-02-04 08:38:20 -Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:38:21 -Starting ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:38:21 -Tomcat started on port(s): 8000 (http) with context path ''
+2023-02-04 08:38:21 -Started ServiceApplication in 3.62 seconds (JVM running for 4.448)
+2023-02-04 08:38:39 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-04 08:38:39 -Initializing Servlet 'dispatcherServlet'
+2023-02-04 08:38:39 -Completed initialization in 17 ms
+2023-02-04 08:39:06 -HikariPool-1 - Starting...
+2023-02-04 08:39:06 -HikariPool-1 - Start completed.
+2023-02-04 08:39:06 -Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:39:06 -HikariPool-1 - Shutdown initiated...
+2023-02-04 08:39:06 -HikariPool-1 - Shutdown completed.
+2023-02-04 08:40:08 -Starting ServiceApplication on nathan.local with PID 99300 (/Users/zzm/IdeaProjects/im-system/service/target/classes started by zzm in /Users/zzm/IdeaProjects/im-system)
+2023-02-04 08:40:08 -The following profiles are active: dev
+2023-02-04 08:40:09 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-02-04 08:40:09 -Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-02-04 08:40:09 -Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2023-02-04 08:40:10 -Tomcat initialized with port(s): 8000 (http)
+2023-02-04 08:40:10 -Initializing ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:40:10 -Starting service [Tomcat]
+2023-02-04 08:40:10 -Starting Servlet engine: [Apache Tomcat/9.0.37]
+2023-02-04 08:40:10 -Initializing Spring embedded WebApplicationContext
+2023-02-04 08:40:10 -Root WebApplicationContext: initialization completed in 1218 ms
+2023-02-04 08:40:10 -Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-04 08:40:11 -Starting ProtocolHandler ["http-nio-8000"]
+2023-02-04 08:40:11 -Tomcat started on port(s): 8000 (http) with context path ''
+2023-02-04 08:40:11 -Started ServiceApplication in 3.349 seconds (JVM running for 4.006)
+2023-02-04 08:40:22 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-04 08:40:22 -Initializing Servlet 'dispatcherServlet'
+2023-02-04 08:40:22 -Completed initialization in 12 ms
+2023-02-04 08:40:22 -HikariPool-1 - Starting...
+2023-02-04 08:40:22 -HikariPool-1 - Start completed.
